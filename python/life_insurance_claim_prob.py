@@ -14,13 +14,16 @@ def isPossible(A,n,target):
             
     return dp[i%2][target]
             
-            
-for _ in xrange(input()):
-    A = map(int, raw_input().split())
-    n = A[0]
-    target = int(raw_input())
-    if isPossible(A[1:],n,target):
-        print "YES"
-    else:
-        print "NO"
+def main():
+    for _ in xrange(input()):
+        A = map(int, raw_input().split())
+        n = A[0]
+        target = int(raw_input())
+        if isPossible(A[1:],n,target):
+            print "YES"
+        else:
+            print "NO"
     
+ 
+if __name__ == '__main__':
+    main()
